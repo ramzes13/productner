@@ -1,0 +1,7 @@
+FROM continuumio/anaconda3:2020.02
+
+WORKDIR workspace
+
+RUN conda install -y scikit-learn
+RUN apt-get install -y graphviz
+RUN conda install -y keras
